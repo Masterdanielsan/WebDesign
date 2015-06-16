@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	/*background: url('images/grcircles.jpg') no-repeat; 
+	background-size: 100%;*/
+	background:#EEE;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0px 0px 0px 0px;
+	margin: 0; list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+f1{
+	Font-size:12px;
+	color:#FFF;
+	font-weight:bold;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+textarea
+{
+    resize:none;
+}
+
+.slink a{
+text-decoration: none;	
+}
+/* ~~ This fixed width container surrounds all other divs ~~ */
+#container {
+	width: 960px;
+	height:650px;
+	background: rgba(102,225,102,0.0);
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	
+} 
+
+#header {
+	background: #093;
+	background: -webkit-gradient(linear, left top, left bottom, from(#093), to(#EEE));
+	background: -moz-linear-gradient(top,  #093,  #EEE);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCFF66', endColorstr='#EEEEEE');
+	height: 130px;
+	
+	
+}
+#hcontent{
+	position:relative;
+	width:960px;
+	margin: 0 auto;	
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+*/
+#slidecontent{
+	height:300px;
+	clear:both;
+}
+#content {
+	padding: 10px 0;
+	width: 600px;
+	float: left;
+	background: #666;
+}
+#sidebar1 {
+	float: left;
+	width: 177px;
+	background: #CCCCCC;
+	padding-top:10px;
+	padding-bottom: 10px;
+	clear:left;
+}
+#sidebar2 {
+	float: left;
+	width: 177px;
+	background: #999;
+	padding-top:10px;
+	padding: 10px 0;
+}
+.rounded{
+	border:1px solid #000000;
+	border-radius:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.shaded{
+	box-shadow:5px 5px 5px #666;
+	-moz-box-shadow: 5px 5px 5px #666;
+ 	-webkit-box-shadow: 5px 5px 5px #666;	
+}
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 0px 0px 0px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. original was 0 15 40 15 */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+
+
+/* ~~ The footer styles ~~ */
+.footer {
+	height:120px;
+	background: #DDD;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the .container) if the .footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+div{
+	overflow:hidden;	
+}
+nav{
+	width:33.4em;
+	margin: 0 auto;
+	margin-bottom:4px;
+	display:block;
+	background:rgb(51,204,255)
+	background:rgba(51,204,255,.5);
+    padding:.25em .5em;
+    right:5px;
+    border:1px solid #000000;
+    -moz-box-shadow:0 1px 1px #333333;
+    -webkit-box-shadow:0 1px 1px #333333;
+    box-shadow:0 1px 1px #333333;
+}
+nav li{
+	display:inline-block;
+	text-align: center;
+	width: 6.25em;
+	background:#CCC;
+	border:1px solid #000000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+nav a:link{
+	text-decoration: none;	
+}
+nav ul li a:hover{
+	background:#DDD;
+	color:#FFF;
+	display:block-inline;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+
+#logo{
+	float:left;	
+}
+#socialicons{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.box{
+	height:215px;
+	width:218px;
+	margin:10px;
+	float:left;
+	background:#CCC;
+}
+#slideshowcontrol{
+	position:relative;
+	left:840px;
+	bottom:30px;
+	width:100px;
+	height:20px;	
+}
+.slideshowbutton{
+	float:left;
+	margin-right:5px;
+	width:20px;
+	hight:20px;
+	background:#9AB5A1;	
+	cursor:pointer;
+	-moz-box-shadow: inset -1px -2px #888;
+	-webkit-box-shadow: inset -1px -2px #888;
+ 	box-shadow: inset -1px -2px #888;
+ 
+}
+
+.box_info{
+	visibility:hidden;	
+	width:218px;
+	margin:10px;
+	float:left;
+	text-align:center;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Daily 2K Nutrition</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src=d2k.js></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--#include file="header.html" -->
+<!--#include file="navbar.html" -->
+
+<div id="container">
+<div id="slidecontent" class="rounded">
+  <a href="#"><img src="images/genimage1.jpg" id="slide" name="slide" width=960 height=300></a>
+  
+  <div id="slideshowcontrol">
+  <div id="button1" class="slideshowbutton"><a onClick=forceSlide(0) >1.</a></div>
+  <div id="button2" class="slideshowbutton"><a onClick=forceSlide(1) >2.</a></div>
+  <div id="button3" class="slideshowbutton"><a onClick=forceSlide(2) >3.</a></div>
+  </div> <!--end slideshowcontrol-->
+  
+</div> 
+<!--end slidecontent-->
+
+<div name="box_holder">
+  <div class="box rounded shaded"><a onMouseOver=showBoxInfo(1) onMouseOut=hideBoxInfo(1)><img src="images/picture1.jpg" width="100%" height="100%" alt="pic1"></a></div>
+  <div class="box rounded shaded"><a onMouseOver=showBoxInfo(2) onMouseOut=hideBoxInfo(2)><img src="images/picture2.jpg" width="100%" height="100%" alt="pic2"></a></div>
+  <div class="box rounded shaded"><a onMouseOver=showBoxInfo(3) onMouseOut=hideBoxInfo(3)><img src="images/picture3.jpg" width="100%" height="100%" alt="pic3"></a></div>
+  <div class="box rounded shaded"><a onMouseOver=showBoxInfo(4) onMouseOut=hideBoxInfo(4)><img src="images/picture4.jpg" width="100%" height="100%" alt="pic4"></a></div>
+</div>
+
+<div name="box_info_holder">
+  <div id="box_info1" class="box_info" >This is a Treadmill! Click here to learn about treadmills!</div>
+  <div id="box_info2" class="box_info" >Our food will make you buff like this manikin!</div>
+  <div id="box_info3" class="box_info" >We sell green shirts!</div>
+  <div id="box_info4" class="box_info" >we have a wide variety of office chairs!</div>
+</div>
+
+</div><!-- end .container -->
+
+
+<!--#include file="footer.html" -->
+<script src=d2kex.js></script>
+</body>
+</html>

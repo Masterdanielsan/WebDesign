@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<!-- TemplateBeginEditable name="Title" -->
+<title>Daily 2K</title>
+<!-- TemplateEndEditable -->
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src=d2k.js></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href="../styles.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="Head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="header">
+<div id="hcontent">
+<div id="logo">
+<a href="http://www.daily2k.com/draft/"><img src="images/ghost.png" alt="Daily 2K Logo"width="128" height="128"/></a>
+<span style="vertical-align:top" > <-cool logo </span>
+</div>
+<div id="socialicons">
+<span style="vertical-align:top">Find us on:</span>
+<a href="#"><img src="images/gp1.png" width="64" height="64" alt="Google Plus"></a>
+<a href="#"><img src="images/li1.png" width="64" height="64" alt="Linked In Logo"></a>
+<a href="#"><img src="images/tw1.png" width="64" height="64" alt="Twitter Logo"></a>
+<a href="#"><img src="images/fb1.png" width="64" height="64" alt="Facebook Logo"></a>
+</div>
+</div><!-- end hcontent -->
+</div><!-- end header -->
+
+<nav class="rounded">
+<ul>
+<li><a href="/draft/">Home</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+<li><a href="#">Link 4</a></li>
+<li><a href="/draft/contact.html">Contact Us!</a></li>
+</ul>
+</nav>
+
+<div id="container">
+<!-- TemplateBeginEditable name="Content" -->Content<!-- TemplateEndEditable -->
+
+</div><!-- end .container -->
+
+
+<div class="footer">
+  <div align="center">
+  <span><f1>© Daily 2K 2012. Webmaster: Daniel Smith</f1></span>
+  <br></br>
+  <span><f1>webmaster@daily2k.com | contact@daily2k.com</f1></span></div>
+  <div align="right">
+  <span class="slink"> <a href="CompanyLinks.html"><f1>Company Links...</f1></a></span></div>
+</div>  <!-- end .footer -->
+<!-- TemplateBeginEditable name="EndBody" -->
+<!-- TemplateEndEditable -->
+<script src=d2kex.js></script>
+</body>
+</html>

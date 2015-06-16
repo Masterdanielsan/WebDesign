@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<title>Contact Daily 2K</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src=d2k.js></script>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--#include file="header.html" -->
+<!--#include file="navbar.html" -->
+
+<div id="container">
+<div style="width:960px">
+  <form id="contactform" onSubmit="return validateForm()" method="post" action="contact.php">
+    <fieldset><legend>Contact the Daily 2K team!</legend>
+      <label for="name">Your name</label>
+      <input type="text" name="cf_name">
+      <br/>
+      <label for="email">Your e-mail</label>
+      <input type="text" name="cf_email">
+      <br/>
+      <label for="message">Message:</label>
+      <textarea name="cf_message" cols="10" style="width: 900px; height: 200px;"></textarea>
+      <br/>
+      <span class="fltrt">
+      <input type="submit" value="Send"></span></fieldset>
+  </form>
+</div>
+
+</div><!-- end .container -->
+
+
+<!--#include file="footer.html" -->
+<script src=d2kex.js></script>
+</body>
+</html>

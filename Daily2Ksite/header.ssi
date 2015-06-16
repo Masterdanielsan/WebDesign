@@ -1,0 +1,16 @@
+<div id="header">
+<div id="hcontent">
+<div id="logo">
+<a href="http://www.daily2k.com/draft/"><img src="images/ghost.png" alt="Daily 2K Logo"width="128" height="128"/></a>
+<span style="vertical-align:top" > <-cool logo </span>
+</div>
+<div id="socialicons">
+<span style="vertical-align:top">Find us on:</span>
+<a href="#"><img src="images/gp1.png" width="64" height="64" alt="Google Plus"></a>
+<a href="#"><img src="images/li1.png" width="64" height="64" alt="Linked In Logo"></a>
+<a href="#"><img src="images/tw1.png" width="64" height="64" alt="Twitter Logo"></a>
+<a href="#"><img src="images/fb1.png" width="64" height="64" alt="Facebook Logo"></a>
+wtfman
+</div>
+</div>
+</div>
